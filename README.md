@@ -23,6 +23,7 @@ the brightest solution!
   - [2. Loading Tracklets](#2-loading-tracklets)
   - [3. Examples](#3-examples)
   - [4. Terms and Conditions](#4-terms-and-conditions)
+  - [5. How to Submit](#5-how-to-submit)
   - [Contacts](#contacts)
 
 
@@ -103,6 +104,11 @@ To see how they work, we provide Jupyter notebooks:
 
 Note that the ground truth test annotations are provided along with the remaining data. This is because they match the ground truth of the original THÖR-MAGNI data, which is readily available. We trust participants to not utilize these unethically. 
 Namely, we expect these train/test paradigms to be followed.
+
+## 5. How to Submit
+
+After training your model, you can submit the predictions through the [submission repository](https://github.com/schrtim/lhmp-thor-magni-challenge).
+
 
 ## Contacts
 
