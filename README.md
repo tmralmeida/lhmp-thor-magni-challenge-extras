@@ -86,18 +86,18 @@ tracklets = [group for _, group in df.groupby("tracklet_id")]  # each item -> tr
 ## 3. Examples
 
 We provide scripts to help load, train, test, and visualize predictions. Specifically:
-* [scaler.py](https://github.com/tmralmeida/icra-magni-benchmark/blob/main/scaler.py) provides classes to scale features and models inputs and outputs
-*  [dataloader.py](https://github.com/tmralmeida/icra-magni-benchmark/blob/main/dataloader.py) provides classes for Pytorch Dataloaders and a "world coordinates to pixels" converter
-*  [cvm.py](https://github.com/tmralmeida/icra-magni-benchmark/blob/main/cvm.py) provides the class for the constant velocity model
-* [simple_mlp.py](https://github.com/tmralmeida/icra-magni-benchmark/blob/main/simple_mlp.py) provides Pytorch Lightning classes to train and evaluate a simple Multi-Layer Perceptron (MLP) model
-* [metrics.py](https://github.com/tmralmeida/icra-magni-benchmark/blob/main/metrics.py) provides the metrics used to evaluate your models!
+* [scaler.py](https://github.com/tmralmeida/lhmp-thor-magni-challenge-extras/blob/main/scaler.py) provides classes to scale features and models inputs and outputs
+*  [dataloader.py](https://github.com/tmralmeida/lhmp-thor-magni-challenge-extras/blob/main/dataloader.py) provides classes for Pytorch Dataloaders and a "world coordinates to pixels" converter
+*  [cvm.py](https://github.com/tmralmeida/lhmp-thor-magni-challenge-extras/blob/main/cvm.py) provides the class for the constant velocity model
+* [simple_mlp.py](https://github.com/tmralmeida/lhmp-thor-magni-challenge-extras/blob/main/simple_mlp.py) provides Pytorch Lightning classes to train and evaluate a simple Multi-Layer Perceptron (MLP) model
+* [metrics.py](https://github.com/tmralmeida/lhmp-thor-magni-challenge-extras/blob/main/metrics.py) provides the metrics used to evaluate your models!
 
 
 To see how they work, we provide Jupyter notebooks:
 
-* Run the Constant Velocity Model [notebook](https://github.com/tmralmeida/icra-magni-benchmark/blob/main/run_cvm.ipynb)
-* Run the Simple MLP Model [notebook](https://github.com/tmralmeida/icra-magni-benchmark/blob/main/run_simple_mlp.ipynb).
-* To get inspired on how to load the obstacle maps via PyTorch [notebook](https://github.com/tmralmeida/icra-magni-benchmark/blob/main/run_dataloader_maps.ipynb)
+* Run the Constant Velocity Model [notebook](https://github.com/tmralmeida/lhmp-thor-magni-challenge-extras/blob/main/run_cvm.ipynb)
+* Run the Simple MLP Model [notebook](https://github.com/tmralmeida/lhmp-thor-magni-challenge-extras/blob/main/run_simple_mlp.ipynb).
+* To get inspired on how to load the obstacle maps via PyTorch [notebook](https://github.com/tmralmeida/lhmp-thor-magni-challenge-extras/blob/main/run_dataloader_maps.ipynb)
 
 
 ## 4. Terms and Conditions
