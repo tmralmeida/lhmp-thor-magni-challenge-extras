@@ -22,8 +22,8 @@ the brightest solution!
   - [1. Data](#1-data)
   - [2. Loading Tracklets](#2-loading-tracklets)
   - [3. Examples](#3-examples)
-  - [4. Terms and Conditions](#4-terms-and-conditions)
-  - [5. How to Submit](#5-how-to-submit)
+  - [4. Submission Procedure](#4-submission-procedure)
+  - [5. Terms and Conditions](#5-terms-and-conditions)
   - [Contacts](#contacts)
 
 
@@ -100,14 +100,38 @@ To see how they work, we provide Jupyter notebooks:
 * To get inspired on how to load the obstacle maps via PyTorch [notebook](https://github.com/tmralmeida/lhmp-thor-magni-challenge-extras/blob/main/run_dataloader_maps.ipynb)
 
 
-## 4. Terms and Conditions
+
+## 4. Submission Procedure
+
+Submissions to our challenge are only to be made in [**.npy** format](https://numpy.org/devdocs/reference/generated/numpy.lib.format.html).
+
+Sample jupyter notebooks for the [CVM](https://github.com/tmralmeida/lhmp-thor-magni-challenge-extras/blob/main/predictions_cvm.ipynb) and for the [MLP model](https://github.com/tmralmeida/lhmp-thor-magni-challenge-extras/blob/main/predictions_mlp.ipynb) demonstrate the format for predictions.
+
+The structure of the predictions file is as follows:
+
+[
+- `predictions_scenario_1` (numpy array): Array of predicted trajectories for the first scenario.
+  - `trajectory_1` (numpy array): Predicted trajectory for the first scenario.
+    - `time_step_1` (numpy array): Coordinates (x, y) at time step 1.
+    - `time_step_2` (numpy array): Coordinates (x, y) at time step 2.
+    - ...
+    - `time_step_N` (numpy array): Coordinates (x, y) at the final time step.
+  - `trajectory_N` (numpy array): Predicted trajectory for the first scenario.
+    - `time_step_1` (numpy array): Coordinates (x, y) at time step 1.
+    - `time_step_2` (numpy array): Coordinates (x, y) at time step 2.
+    - ...
+    - `time_step_N` (numpy array): Coordinates (x, y) at the final time step.
+- `predictions_scenario_N` (numpy array): Array of predicted trajectories for the Nth scenario.
+  - ...
+
+]
+
+To submit, just follow the [evaluation procedure](https://github.com/schrtim/lhmp-thor-magni-challenge?tab=readme-ov-file#3-how-to-test-a-prediction).
+
+## 5. Terms and Conditions
 
 Note that the ground truth test annotations are provided along with the remaining data. This is because they match the ground truth of the original THÖR-MAGNI data, which is readily available. We trust participants to not utilize these unethically. 
 Namely, we expect these train/test paradigms to be followed.
-
-## 5. How to Submit
-
-After training your model, you can submit the predictions through the [submission repository](https://github.com/schrtim/lhmp-thor-magni-challenge).
 
 
 ## Contacts
