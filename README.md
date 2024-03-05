@@ -126,7 +126,7 @@ The structure of the predictions file is as follows:
 
 ]
 
-To submit, just follow the [evaluation procedure](https://github.com/schrtim/lhmp-thor-magni-challenge?tab=readme-ov-file#3-how-to-test-a-prediction).
+To submit, just follow the [submission procedure](https://github.com/schrtim/lhmp-thor-magni-challenge?tab=readme-ov-file#3-how-to-test-a-prediction).
 
 ## 5. Terms and Conditions
 
