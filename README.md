@@ -10,9 +10,11 @@ capabilities of your model, so we want to evaluate it in the leave-one-scenario-
 The THÖR-MAGNI dataset contains 5 scenarios that evaluate different contextual cues of human motion. 
 Therefore, in this benchmark, you will need to train your model on *4* scenarios and leave the remaining scenario
 for testing (validation up to you!). The observation and prediction horizons are 8 and 12 timesteps, respectively.
+The metrics used to evaluate the predictions are the *Average Displacement Error (ADE)* and the *Final Displacement Error (FDE)*.
+If you are using a generative model (multiple outputs), **you must submit the Top-1 predictions** (i.e., the most likely prediction).
 
 In the following sections, we will present the data, scripts, and examples that can help you come up with the
-the brightest solution!
+brightest solution!
 
 # Table of Contents
 - [lhmp-thor-magni-challenge-extras](#lhmp-thor-magni-challenge-extras)
@@ -76,7 +78,7 @@ Additionally, we also precompute some motion-related features such as **2D_speed
 
 ## 2. Loading Tracklets
 
-To load the tracklets of a specific scneario:
+To load the tracklets of a specific scenario:
 
 ```python
 df = pd.read_csv(os.path.join(PATH, SCENARIO + ".csv"), index_col = "Time")
