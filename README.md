@@ -133,7 +133,8 @@ To submit, just follow the [submission procedure](https://github.com/schrtim/lhm
 ## 5. Terms and Conditions
 
 Note that the ground truth test annotations are provided along with the remaining data. This is because they match the ground truth of the original THÖR-MAGNI data, which is readily available. We trust participants to not utilize these unethically. 
-Namely, we expect these train/test paradigms to be followed.
+Namely, we expect these train/test paradigms to be followed. Furthermore, if you are using a generative model (multiple outputs), **you must submit the Top-1 predictions** (i.e., the most likely prediction). These hard requirements will be checked after the 
+benchmark deadline.
 
 
 ## Contacts
